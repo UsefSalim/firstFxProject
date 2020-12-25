@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="391.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="immobilier.add.AddImmoController">
+   <children>
+      <TableView fx:id="immobilierTable" layoutX="436.0" onMouseClicked="#getSelect" prefHeight="391.0" prefWidth="601.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="179.0" text="id" />
+            <TableColumn fx:id="surface" minWidth="0.0" prefWidth="0.0" text="Surface" />
+            <TableColumn fx:id="type" prefWidth="141.0" text="Type " />
+            <TableColumn fx:id="adress" prefWidth="204.0" text="Adress" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField fx:id="idImmo" layoutX="42.0" layoutY="141.0" prefHeight="31.0" prefWidth="176.0" promptText="id" />
+      <TextField fx:id="immoadress" layoutX="241.0" layoutY="182.0" prefHeight="31.0" prefWidth="176.0" promptText="Adress" />
+      <TextField fx:id="typeImmo" layoutX="42.0" layoutY="182.0" prefHeight="31.0" prefWidth="176.0" promptText="Type" />
+      <TextField fx:id="immoSurface" layoutX="241.0" layoutY="141.0" prefHeight="31.0" prefWidth="176.0" promptText="Surface m²" />
+      <Button layoutX="284.0" layoutY="234.0" mnemonicParsing="false" onAction="#editImmo" prefHeight="25.0" prefWidth="86.0" text="Update Immobilier" />
+      <Button layoutX="87.0" layoutY="234.0" mnemonicParsing="false" onAction="#addImmo" prefHeight="25.0" prefWidth="86.0" text="Add Immobilier" />
+      <Button layoutX="185.0" layoutY="234.0" mnemonicParsing="false" onAction="#deleteImmo" prefHeight="25.0" prefWidth="86.0" text="Delete Immobilier" />
+      <Button layoutX="176.0" layoutY="29.0" mnemonicParsing="false" onAction="#DashUsers" prefHeight="31.0" prefWidth="104.0" text="Users" />
+   </children>
+</AnchorPane>

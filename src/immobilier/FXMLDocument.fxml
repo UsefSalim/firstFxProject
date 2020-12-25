@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="327.0" prefWidth="449.0" style="-fx-effect: innershadow(gaussian,aqua,1,0,2,2);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="immobilier.FXMLDocumentController">
+    <children>
+      <TextField fx:id="userName" layoutX="139.0" layoutY="91.0" prefHeight="63.0" prefWidth="252.0" promptText="UserName" style="-fx-background-radius: 10px;" AnchorPane.leftAnchor="139.0" AnchorPane.rightAnchor="58.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" />
+         </padding>
+      </TextField>
+      <Button layoutX="142.0" layoutY="237.0" mnemonicParsing="false" onAction="#login" prefHeight="34.0" prefWidth="107.0" style="-fx-background-color: #66bd49;" text="Login" textAlignment="CENTER" AnchorPane.leftAnchor="142.0" AnchorPane.rightAnchor="201.0">
+         <font>
+            <Font name="Century" size="16.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.45555555555555555" centerY="0.6238095238095238" radius="0.9186046511627908">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="0.5532646048109966" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="30.0" layoutY="108.0" prefHeight="17.0" prefWidth="96.0" text="User Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="153.0" prefHeight="17.0" prefWidth="96.0" text="Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="139.0" layoutY="131.0" prefHeight="56.0" prefWidth="252.0" promptText="Pasword" style="-fx-background-radius: 10px;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="307.0" layoutY="242.0" onMouseClicked="#inscription" prefHeight="25.0" prefWidth="74.0" text="S'inscrire" />
+    </children>
+</AnchorPane>
